@@ -1,0 +1,7 @@
+node_modules
+dist
+.DS_Store
+*.local
+
+# 含服务器账号密码，仅本机保留
+deploy.local.sh
