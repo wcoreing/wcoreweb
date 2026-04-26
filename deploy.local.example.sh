@@ -29,6 +29,7 @@ sshpass -e ssh -o StrictHostKeyChecking=accept-new \
   "${DEPLOY_USER}@${DEPLOY_HOST}" "mkdir -p '${REMOTE_PATH}'"
 
 sshpass -e rsync -avz --delete \
+  --exclude '.DS_Store' \
   -e 'ssh -o StrictHostKeyChecking=accept-new' \
   "dist/" "${DEPLOY_USER}@${DEPLOY_HOST}:${REMOTE_PATH}"
 
