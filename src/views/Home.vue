@@ -29,11 +29,11 @@
             <h2 class="section-title">产品</h2>
             <p class="section-desc">每个产品采用独立模板展示，便于后续单独扩展。</p>
           </div>
-          <span class="product-count">共 1 个产品</span>
+          <span class="product-count">共 2 个产品</span>
         </div>
         <div class="product-grid">
           <NestProductCard />
-        
+          <AiKefuProductCard />
         </div>
       </div>
     </section>
@@ -75,9 +75,7 @@
 </template>
 
 <script setup>
-import AtlasProductCard from '../components/products/AtlasProductCard.vue'
-import FluxProductCard from '../components/products/FluxProductCard.vue'
-import LoomProductCard from '../components/products/LoomProductCard.vue'
+import AiKefuProductCard from '../components/products/AiKefuProductCard.vue'
 import NestProductCard from '../components/products/NestProductCard.vue'
 </script>
 
